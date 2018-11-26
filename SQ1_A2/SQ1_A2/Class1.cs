@@ -10,7 +10,7 @@ namespace SQ1_A2
     {
         public double GetMissingAngle(double sideA, double sideB)
         {
-            if (sideA < 179 & sideB < 179)
+            if (sideA < 179 & sideB < 179 && sideA >0 && sideB > 0)
             {
                 double result = 180 - sideA - sideB;
                 return result;
