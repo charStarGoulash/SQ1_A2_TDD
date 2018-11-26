@@ -10,7 +10,8 @@ namespace SQ1_A2
     {
         public double GetMissingAngle(double sideA, double sideB)
         {
-            return 0;
+            double result = 180 - sideA - sideB;
+            return result;
         }
 
         public double FindHypotenuse(double sideA, double sideB)
