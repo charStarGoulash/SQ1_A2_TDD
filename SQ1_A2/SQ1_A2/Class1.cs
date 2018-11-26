@@ -36,7 +36,8 @@ namespace SQ1_A2
 
         public double GetArea(double sideA, double sideB)
         {
-            return 0;
+            double result = 0.5 * sideA * sideB;
+            return result;
         }
     }
 }
