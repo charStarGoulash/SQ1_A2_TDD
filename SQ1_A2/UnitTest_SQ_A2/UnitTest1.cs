@@ -30,5 +30,13 @@ namespace UnitTest_SQ_A2
             double result = obj.FindHypotenuse(25, 25);
             Assert.AreEqual(35.36, result);
         }
+
+        [TestMethod]
+        public void Test_FindHypotenuse_Exception()
+        {
+            Triangle obj = new Triangle();
+            double result = obj.FindHypotenuse(-10, 25);
+            Assert.AreEqual(-1, result);
+        }
     }
 }
