@@ -23,8 +23,15 @@ namespace SQ1_A2
 
         public double FindHypotenuse(double sideA, double sideB)
         {
-            double result = Math.Round( Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2)), 2);
-            return result;
+            if (sideA > 0 && sideB > 0)
+            {
+                double result = Math.Round(Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2)), 2);
+                return result;
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         public double GetArea(double sideA, double sideB)
