@@ -54,5 +54,13 @@ namespace UnitTest_SQ_A2
             double result = obj.GetArea(-10, 10);
             Assert.AreEqual(-1, result);
         }
+
+        [TestMethod]
+        public void Test_GetMissingAngle_Exception2()
+        {
+            Triangle obj = new Triangle();
+            double result = obj.GetMissingAngle(-1, 10);
+            Assert.AreEqual(-1, result);
+        }
     }
 }
